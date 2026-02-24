@@ -47,3 +47,25 @@ alias GLFfetch="$(which fastfetch) --config ~/.config/fastfetch/GLFfetch/challen
 alias fs="yazi"
 
 
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:~/.local/share/flatpak/exports/share"
+export PATH="$PATH:/var/lib/flatpak/exports/bin:~/.local/share/flatpak/exports/bin"   
+# Created by `pipx` on 2026-02-24 10:42:56
+export PATH="$PATH:/home/mael/.local/bin"
+
+# Basic replacement
+alias ls='eza'
+
+# Long format with icons and Git info
+alias ll='eza -l --header --git --icons'
+
+# Long format, including hidden files
+alias la='eza -la --header --icons'
+
+# Tree view (2 levels deep)
+alias lt='eza --tree --level=2'
+
+# Sort by modification time (newest first)
+alias lm='eza -l --sort=modified --reverse --header --icons'
+
+# One column (just names)
+alias lS='eza -1'
